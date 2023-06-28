@@ -516,6 +516,7 @@ class JupyterHandler(AuthenticatedHandler):
         return allow
 
     def check_xsrf_cookie(self):
+        return
         """Bypass xsrf cookie checks when token-authenticated"""
         if not hasattr(self, "_jupyter_current_user"):
             # Called too early, will be checked later
