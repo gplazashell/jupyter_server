@@ -24,7 +24,7 @@
 
 <body class="{% block bodyclasses %}{% endblock %}" {% block params %} {% if logged_in and token %}
   data-jupyter-api-token="{{token | urlencode}}" {% endif %} {% endblock params %} dir="ltr">
-
+  <script> console.log("testing")</script>
   <noscript>
     <div id='noscript'>
       {% trans %}Jupyter Server requires JavaScript.{% endtrans %}<br>
